@@ -7,7 +7,6 @@
   <groupId>com.vividsolutions</groupId>
   <artifactId>jts</artifactId>
   <version>1.8</version>
-
-
+  <name>JTS Topology Suite</name>
 </project>
 
