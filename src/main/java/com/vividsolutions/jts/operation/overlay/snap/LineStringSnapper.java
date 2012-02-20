@@ -109,6 +109,8 @@ public class LineStringSnapper
    */
   private void snapSegments(CoordinateList srcCoords, Coordinate[] snapPts)
   {
+    throw new UnsupportedOperationException("Method disabled."); 
+    /* 
     int distinctPtCount = snapPts.length;
 
     // check for duplicate snap pts.  
@@ -119,16 +121,14 @@ public class LineStringSnapper
     for (int i = 0; i < distinctPtCount; i++) {
       Coordinate snapPt = snapPts[i];
       int index = findSegmentIndexToSnap(snapPt, srcCoords);
-      /**
-       * If a segment to snap to was found, "crack" it at the snap pt.
-       * The new pt is inserted immediately into the src segment list,
-       * so that subsequent snapping will take place on the latest segments.
-       * Duplicate points are not added.
-       */
-      if (index >= 0) {
+        
+      //  If a segment to snap to was found, "crack" it at the snap pt. The new pt is inserted immediately into the src
+      //  segment list, so that subsequent snapping will take place on the latest segments. Duplicate points are not
+      //  added.   
+      if (index >= 0) {  
         srcCoords.add(index + 1, new Coordinate(snapPt), false);
       }
-    }
+    } */
   }
 
 
